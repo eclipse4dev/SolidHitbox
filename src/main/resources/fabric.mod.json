@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "solid_hitbox",
+  "version": "${version}",
+  "name": "Solid Hitbox",
+  "description": "",
+  "authors": ["Vee"],
+  "contact": {},
+  "license": "Vee Distribution License",
+  "icon": "assets/solid_hitbox/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.vee.solid_hitbox.client.Solid_hitboxClient"
+    ],
+    "main": [
+      "org.vee.solid_hitbox.Solid_hitbox"
+    ]
+  },
+  "mixins": [
+    "solid_hitbox.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
